@@ -1,5 +1,6 @@
 import torch
 import numpy as np
+from torch.autograd import Variable
 
 # new a numpy data
 np_data = np.arange(6).reshape((2,3))
