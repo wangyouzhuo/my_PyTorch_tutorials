@@ -53,7 +53,9 @@ for t in range(1000):
         4. BP the grad
         5. use gradient to update the node
     """
-    prediction = net(x)
+    out = net(x)
+
+    prediction = torch.max(F.softplus(out),1)[1] # [0] return max_value    [1] return max_index
 
     loss = loss_func(prediction,y)
 
