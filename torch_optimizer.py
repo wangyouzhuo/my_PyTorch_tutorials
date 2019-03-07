@@ -52,7 +52,7 @@ loss_func = torch.nn.MSELoss()
 
 losses_his = [[],[],[],[]]
 
-for epoch in range(EPOCH)：
+for epoch in range(EPOCH):
     print(epoch)
     for step,(batch_x,batch_y) in enumerate(loader):
         b_x = Variable(batch_x)
